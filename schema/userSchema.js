@@ -3,7 +3,7 @@ const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    Bio: { type: String },
+    bio: { type: String },
     profilePic: { type: String },
     location:{ type: String  },
     filesUploaded: [{ type: mongoose.Schema.Types.ObjectId, ref: 'file' }],
