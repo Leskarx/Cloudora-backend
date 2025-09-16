@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     bio: { type: String },
     profilePic: { type: String },
     location:{ type: String  },
-    filesUploaded: [{ type: mongoose.Schema.Types.ObjectId, ref: 'file' }],
+    filesUploaded: [{ type: mongoose.Schema.Types.ObjectId, ref: 'File' }],
    },{ timestamps: true });
   
   export default mongoose.model('user',userSchema)

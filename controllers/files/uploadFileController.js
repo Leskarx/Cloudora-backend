@@ -59,12 +59,8 @@ async function uploadFile(req, res) {
     return res.status(200).json({
       message: "File uploaded successfully",
       file: savedFile,
-    //   user: {
-    //     _id: savedUser._id,
-    //     name: savedUser.name,
-    //     email: savedUser.email,
-    //     filesUploaded: savedUser.filesUploaded,
-    //   },
+      user: savedUser
+      
     });
 
   } catch (error) {
